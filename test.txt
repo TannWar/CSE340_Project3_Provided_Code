@@ -1,0 +1,16 @@
+a, b, c, d, e ;
+{
+    input a ;
+    input b ;
+    input c ;
+    input d ;
+    input e ;
+    SWITCH a {
+        CASE 3 : { output b ; }
+        CASE 5 : { output b ; output c ; }
+        CASE 7 : { output b ; output c ; output d ; }
+        CASE 9 : { output b ; output c ; output d ; output e ; }
+        DEFAULT : { output e ; output d ; }
+    }
+}
+7324 300 400 500 600
